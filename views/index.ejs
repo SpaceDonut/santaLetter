@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Welcome to Glitch!</title>
+  <meta name="description" content="A cool thing made with Glitch">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- import the webpage's stylesheet -->
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+  <!-- import the webpage's client-side javascript file -->
+  <script src="/js/client.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1>A letter to Santa</h1>
+      <p class="bold">Ho ho ho, what you want for christma?</p>
+      <form id="letterForm" method="post">
+        <label for="userId">
+          <p>Who are you?</p>
+          <input id="userId" name="userId" placeholder="charlie.brown" />
+        </label>
+        <label for="wish">
+          <p>What do you want for christmas?</p>
+          <textarea id="wish" name="wish" rows="10" cols="45" maxlength="100" placeholder="Gifts!"></textarea>
+        </label>
+        <br/>
+        <button type="submit" id="submit-letter">Send</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <span>Made with</span>
+    <a href="https://glitch.com">Glitch</a>!
+  </footer>
+
+  <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+  <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+  <script src="https://button.glitch.me/button.js"></script>
+
+</body>
+
+</html>
